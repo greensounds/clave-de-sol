@@ -1,0 +1,240 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  color: #797e83;
+  font-size: 16px;
+	margin: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; 
+}
+
+img{
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400; 
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: .5em 2em;
+  letter-spacing: 0.1em;
+  border-radius: 3px;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms;
+  background: #F54C4D;
+  margin: 0 auto;
+}
+
+.one:hover {
+  box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px #F54C4D;
+}
+
+.shirt {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.main-content {
+	margin-top: 3.25em;
+}
+
+.flex-contents {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+main {
+	background: white;
+	flex: 8;
+}
+
+.info-principal {
+	padding: 0 3em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: url('../img/sublimacion.jpg') no-repeat center center;
+	background-size: cover;
+	color: white;
+	font-size: 1.5rem;
+	min-height: 25rem;
+}
+
+.playeras {
+	color: white;
+	padding: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	max-width: 1200px;
+	min-height: 15rem;
+	margin: 0 auto;
+}
+
+.playeras article {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 24%;
+	margin: .3em;
+}
+
+.playeras article h3 {
+	text-align: center;
+	color: #3d3d3d;
+}
+
+.playeras article p {
+	text-align: center;
+	padding: .2em;
+	color: #3d3d3d;
+}
+
+.heading-playeras, .heading-acerca{
+	text-align: center;
+	padding: 2em;
+	background: #F54C4D;
+	color: white;
+	margin-top: 1em;
+}
+
+.heading-acerca{
+	margin-top: 0;
+}
+
+.col {
+	padding: 3em 1em;
+	text-align: center;
+}
+
+.col h2{
+	text-align: center;
+}
+
+.primary {
+	text-align: center;
+}
+
+.col img {
+	padding: 0 50px;
+}
+
+/*Estilos de contacto*/
+form {
+	max-width: 450px;
+	margin: 0 auto 50px;
+	padding: 20px;
+}
+
+form h2{
+	text-align: center;
+}
+
+form input, textarea{
+	border: 3px solid #F54C4D;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+input[type="submit"]{
+  display: inline-block;
+  margin: 20px 0;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 3px;
+  transition: all 300ms;
+  background: #F54C4D;
+}
+
+input[type="submit"]:hover {
+	box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 4px #F54C4D;
+}
+
+textarea{
+	height: 10em;
+}
+
+form input:focus, textarea:focus {
+	outline: none;
+	border-color: #F54C4D;
+}
+
+form label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+	padding: .7em;
+	color: white;
+	background: #F54C4D;
+}
+
+footer a {
+	color: white;
+}
+
+@media all and (max-width: 48em) {
+	.playeras article {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 48%;
+	margin: .3em;
+	}
+
+	.main-header img {
+		max-width: 100%;
+	}
+}
+
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1080px;
+	}
+}

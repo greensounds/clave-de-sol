@@ -1,0 +1,120 @@
+/* --------------------------
+  Main Styles
+--------------------------- */
+
+.main-header,
+.nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-header {
+	padding: 0 2em;
+	margin: 1em 0;
+}
+
+.site-logo {
+	width: 110px;
+	align-self: center;
+}
+
+.nav {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.nav a {
+	display: block;
+	color: #797e83;
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .4em;
+	border-bottom: 1px solid #ebecec;
+}
+
+.nav a:hover {
+	color: #0b0b0b;
+	border-bottom-color: #F54C4D;
+}
+
+.main-header img{
+	max-width: 100%;
+}
+
+/* --------------------------
+  Media Queries
+--------------------------- */
+
+@media (min-width: 769px) {
+	.main-header {
+		margin: 1em 0;
+		justify-content: flex-end;
+	}
+
+	.main-header img {
+		max-width: 100%;
+	}
+	.site-logo {
+		width: 140px;
+	}
+	.nav {
+		margin-bottom: .75em;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.nav a {
+		border-bottom-color: transparent;
+	}
+
+	.row{
+		display: flex;
+	}
+
+	.col{
+		flex: 1 50%;
+		text-align: left;
+	}
+
+	.row{
+		flex-wrap: wrap;
+	}
+
+	.secondary{
+		order: -1;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header {
+		flex-direction: row;
+	}
+	.main-header img {
+		max-width: 55%;
+	}
+	.site-logo {
+		margin-right: auto;
+	}
+	.nav {
+		margin-top: 0;
+		align-self: center;
+		margin-bottom: .5em;
+	}
+	.nav li {
+		margin-left: .65em;
+		margin-right: .65em;
+	}
+	.row{
+		max-width: 1200px;
+		margin: 4em auto;
+	}
+
+	.col{
+		flex-basis: 0;
+		text-align: left;
+	}
+
+	.primary {
+		flex-grow: 1.4;
+	}
+}
